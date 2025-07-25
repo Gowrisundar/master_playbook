@@ -1,6 +1,7 @@
 ---
 - name: directory file creation play
   hosts: webservers
+  become: true
   tasks: 
     - name: first task directory creation
       ansible.builtin.file:
